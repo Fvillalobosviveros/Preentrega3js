@@ -1,7 +1,6 @@
 body{
 
     background-color: cyan;
-
     text-align: center;
 
    
@@ -13,11 +12,8 @@ body{
 .card {
 
     height: 400px; /* Altura fija para todas las tarjetas */
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-between; /* Espaciao interno */
 
 }
@@ -27,7 +23,6 @@ body{
 .card-img-top {
 
     height: 180px; /* Altura fija para todas las imágenes */
-
     object-fit: cover; /*la imagen cubre todo el espacio */
 
 }

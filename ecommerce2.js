@@ -7,7 +7,6 @@ let carrito = JSON.parse(localStorage.getItem('carrito')) || []; // Inicia el ca
 document.addEventListener('DOMContentLoaded', () => {
 
     cargarProductos(); // Carga productos desde un JSON local al iniciar.
-
     cargarCarritoDesdeStorage(); // Carga el carrito desde LocalStorage al iniciar.
 
 });
@@ -17,9 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function cargarProductos() {
 
     fetch('productos.json')
-
     .then(response => response.json())
-
     .then(data => {
 
         productos = data;
@@ -37,9 +34,7 @@ function cargarProductos() {
 function renderizarProductos(listaProds) {
 
     const contenedorProds = document.getElementById('misprods');
-
     contenedorProds.innerHTML = '';
-
     listaProds.forEach(prod => {
 
         const htmlProd = `
@@ -57,6 +52,7 @@ function renderizarProductos(listaProds) {
                         <p class="card-text">${formatearPrecio(prod.precio)}</p>
 
                         <button class="btn btn-primary" onclick="agregarACarrito(${prod.id})">Agregar al Carrito</button>
+                        
 
                     </div>
 
@@ -85,11 +81,8 @@ function formatearPrecio(precio) {
 function agregarACarrito(idProd) {
 
     const producto = productos.find(p => p.id === idProd);
-
     carrito.push(producto);
-
     localStorage.setItem('carrito', JSON.stringify(carrito));
-
     actualizarCarrito();
 
 }
@@ -99,9 +92,7 @@ function agregarACarrito(idProd) {
 function actualizarCarrito() {
 
     const tablaBody = document.getElementById('tablabody');
-
     tablaBody.innerHTML = '';
-
     carrito.forEach(prod => {
 
         tablaBody.innerHTML += `
@@ -109,9 +100,7 @@ function actualizarCarrito() {
             <tr>
 
                 <td>${prod.id}</td>
-
                 <td>${prod.nombre}</td>
-
                 <td>${formatearPrecio(prod.precio)}</td>
 
             </tr>
@@ -129,7 +118,6 @@ function actualizarCarrito() {
 function calcularTotal() {
 
     const total = carrito.reduce((sum, prod) => sum + prod.precio, 0);
-
     document.getElementById('total').textContent = formatearPrecio(total);
 
 }
@@ -141,7 +129,6 @@ function cargarCarritoDesdeStorage() {
     if (localStorage.getItem('carrito')) {
 
         carrito = JSON.parse(localStorage.getItem('carrito'));
-
         actualizarCarrito();
 
     }
@@ -153,9 +140,7 @@ function cargarCarritoDesdeStorage() {
 function buscarProductos() {
 
     const searchText = document.getElementById('search-input').value.toLowerCase();
-
     const productosFiltrados = productos.filter(prod => prod.nombre.toLowerCase().includes(searchText));
-
     renderizarProductos(productosFiltrados);
 
 }
@@ -165,11 +150,8 @@ function buscarProductos() {
 document.getElementById('vaciarBtn').addEventListener('click', () => {
 
     carrito = [];
-
     localStorage.removeItem('carrito');
-
     actualizarCarrito();
-
     document.getElementById('total').textContent = '$0';
 
 });
@@ -187,11 +169,8 @@ function finalizarCompra() {
         Swal.fire({
 
             icon: 'error',
-
             title: 'Oops...',
-
             text: 'Tu carrito está vacío!',
-
             confirmButtonText: 'Entendido'
 
         });
@@ -203,17 +182,11 @@ function finalizarCompra() {
     Swal.fire({
 
         title: '¿Estás listo para finalizar la compra?',
-
         text: "¡No podrás revertir esto!",
-
         icon: 'warning',
-
         showCancelButton: true,
-
         confirmButtonColor: '#3085d6',
-
         cancelButtonColor: '#d33',
-
         confirmButtonText: 'Sí, finalizar compra!'
 
     }).then((result) => {
@@ -223,9 +196,7 @@ function finalizarCompra() {
             Swal.fire(
 
                 '¡Completado!',
-
                 'Tu compra ha sido finalizada.',
-
                 'success'
 
             );
