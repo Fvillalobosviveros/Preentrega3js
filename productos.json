@@ -1,0 +1,183 @@
+[
+
+    {
+
+        "id": 1,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/9ro9phkb_24bc86fd_thumbnail_512.png",
+
+        "nombre": "Tarjeta de Video Zotac Nvidia",
+
+        "precio": 354.00
+
+    },
+
+    {
+
+        "id": 2,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/ls1e_ja0_b8fb16f0_thumbnail_512.jpg",
+
+        "nombre": "Mouse Logitech G Pro X",
+
+        "precio": 90.00
+
+    },
+
+    {
+
+        "id": 3,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/9w6nk0d8_f299489e_thumbnail_512.png",
+
+        "nombre": "Unidad SSD XPG GAMMIX S70",
+
+        "precio": 82.00
+
+    },
+
+    {
+
+        "id": 4,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/yw24xddb_5b4aa387_thumbnail_512.png",
+
+        "nombre": "Monitor Gamer Curvo Titan",
+
+        "precio": 149.00
+
+    },
+
+    {
+
+        "id": 5,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/jbbn8y73_4f2da3b3_thumbnail_512.png",
+
+        "nombre": "Audífonos Gamer HyperX Cloud",
+
+        "precio": 39.00
+
+    },
+
+    {
+
+        "id": 6,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/9r9lsn9v_d64b6dd1_thumbnail_512.jpg",
+
+        "nombre": "Monitor Gamer LG UltraGear",
+
+        "precio": 249.00
+
+    },
+
+    {
+
+        "id": 7,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/ejtiw4l__06156171_thumbnail_512.jpg",
+
+        "nombre": "Disipador de Procesador",
+
+        "precio": 28.00
+
+    },
+
+    {
+
+        "id": 8,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/mv0bgp9w_66699927_thumbnail_512.png",
+
+        "nombre": "Teclado Gamer Steelseries",
+
+        "precio": 115.00
+
+    },
+
+    {
+
+        "id": 9,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/8r7kh6dr_52912411_thumbnail_512.jpg",
+
+        "nombre": "Tarjeta de Video MSI Nvidia",
+
+        "precio": 349.00
+
+    },
+
+    {
+
+        "id": 10,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/48xf3l6x_1ad37798_thumbnail_512.jpg",
+
+        "nombre": "Purificador de Aire TruSens",
+
+        "precio": 453.00
+
+    },
+
+    {
+
+        "id": 11,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/92fxym75_478b0949_thumbnail_512.jpg",
+
+        "nombre": "Asistente Virtual Apple Homepod",
+
+        "precio": 53.00
+
+    },
+
+    {
+
+        "id": 12,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/7vyj_0f4_24da7c54_thumbnail_512.jpg",
+
+        "nombre": "Notebook ASUS ExpertBook B1",
+
+        "precio": 112.00
+
+    },
+
+    {
+
+        "id": 13,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/6nvxuchc_28feb3f5_thumbnail_512.png",
+
+        "nombre": "Volante Racing Universal",
+
+        "precio": 682.00
+
+    },
+
+    {
+
+        "id": 14,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/a_buouco_08155769_thumbnail_512.png",
+
+        "nombre": "Kit de Videoconferencia Logitech",
+
+        "precio": 999.00
+
+    },
+
+    {
+
+        "id": 15,
+
+        "foto": "https://media.spdigital.cl/thumbnails/products/udt3fqxu_27f2e082_thumbnail_512.jpg",
+
+        "nombre": "Placa Madre MSI A520M-A",
+
+        "precio": 61.00
+
+    }
+
+]

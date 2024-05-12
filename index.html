@@ -1,60 +1,129 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Mi E-commerce, encuentra los mejores productos electrónicos a precios increíbles.">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="style.css">
+
     <title>Mi E-commerce</title>
+
 </head>
+
 <body>
 
+ 
+
 <header class="bg-dark py-3">
+
     <nav class="container d-flex justify-content-center">
+
         <ul class="nav nav-pills">
+
             <li class="nav-item"><a href="#" class="nav-link text-white">Inicio</a></li>
+
             <li class="nav-item"><a href="#" class="nav-link text-white">Artículos</a></li>
+
             <li class="nav-item"><a href="#" class="nav-link text-white">Lo más vendido</a></li>
+
             <li class="nav-item"><a href="#" class="nav-link text-white">Carrito</a></li>
+
         </ul>
+
     </nav>
+
 </header>
 
+ 
+
 <main class="container mt-5">
+
+    <div class="search-bar">
+
+        <input type="text" id="search-input" placeholder="Buscar productos..." aria-label="Buscar productos">
+
+        <button onclick="buscarProductos()">Buscar</button>
+
+    </div>
+
     <div id="misprods" class="row">
+
         <!-- Los productos se cargarán aquí -->
+
     </div>
+
     <div class="mt-4">
+
         <div class="row justify-content-center">
+
             <div class="col-lg-8 col-md-10" class="div2">
+
                 <h2 class="text-center">Carrito de Compras</h2>
+
                 <table id="tablaCarrito" class="table">
+
                     <thead class="thead-dark">
+
                         <tr>
+
                             <th>ID</th>
+
                             <th>Nombre</th>
+
                             <th>Precio</th>
+
                         </tr>
+
                     </thead>
+
                     <tbody id="tablabody">
+
                         <!-- Aquí se cargarán los productos del carrito -->
+
                     </tbody>
+
                 </table>
+
                 <p class="text-center">Total: <span id="total">$0</span></p>
+
                 <div class="d-flex justify-content-center">
+
                     <button id="finalizarBtn" class="btn btn-success mx-2">Finalizar Compra</button>
+
                     <button id="vaciarBtn" class="btn btn-danger mx-2">Vaciar Carrito</button>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </main>
 
+ 
+
 <footer class="bg-dark text-white py-3 mt-5">
+
     <p class="text-center">Todos los derechos reservados &copy; 2024 Mi E-commerce</p>
+
 </footer>
 
+ 
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="ecommerce.js"></script>
+
+<script src="ecommerce2.js"></script>
+
 </body>
+
 </html>

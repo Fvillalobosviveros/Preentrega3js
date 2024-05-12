@@ -1,14 +1,53 @@
 body{
+
     background-color: cyan;
+
     text-align: center;
 
+   
+
 }
 
+ 
 
+.card {
 
-div:hover{
+    height: 400px; /* Altura fija para todas las tarjetas */
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between; /* Espaciado interno consistente */
+
+}
+
+ 
+
+.card-img-top {
+
+    height: 180px; /* Altura fija para todas las imágenes */
+
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+
+}
+
+ 
+
+.card-body {
+
+    flex-grow: 1; /* Permite que el cuerpo de la tarjeta ocupe el espacio restante */
+
+}
+
+ 
+
+/* div:hover{
+
     cursor: pointer;
+
     transform: scale(1.05);
 
-}
+ 
 
+} */
