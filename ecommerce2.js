@@ -1,6 +1,6 @@
 let productos = []; // Variable global para los productos cargados desde JSON
 
-let carrito = JSON.parse(localStorage.getItem('carrito')) || []; // Inicializa el carrito desde LocalStorage o como un array vacío.
+let carrito = JSON.parse(localStorage.getItem('carrito')) || []; // Inicia el carrito desde LocalStorage o como un array vacío.
 
  
 

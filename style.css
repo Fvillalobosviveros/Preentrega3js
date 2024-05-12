@@ -18,7 +18,7 @@ body{
 
     flex-direction: column;
 
-    justify-content: space-between; /* Espaciado interno consistente */
+    justify-content: space-between; /* Espaciao interno */
 
 }
 
@@ -28,7 +28,7 @@ body{
 
     height: 180px; /* Altura fija para todas las imágenes */
 
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    object-fit: cover; /*la imagen cubre todo el espacio */
 
 }
 
@@ -36,7 +36,7 @@ body{
 
 .card-body {
 
-    flex-grow: 1; /* Permite que el cuerpo de la tarjeta ocupe el espacio restante */
+    flex-grow: 1; /* la tarjeta ocupe el espacio restante */
 
 }
 
